@@ -1,0 +1,204 @@
+:root {
+    --body-color:#1f2127;
+    --black-color:black;
+    --gold-color: #d6a240;
+    --white-color:white;
+    --font-family:cursive;
+}
+
+body{
+    
+    background-color: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+  
+}
+
+.black-color{
+    background-color: var(--black-color);
+}
+
+.brand-name{
+    color: var(--gold-color);
+    font-family: var(--font-family);
+}
+
+/* nav bar styling */
+
+.nav-menu{
+    color: var(--gold-color);
+    font-family: var(--font-family);
+}
+
+.navbar-brand img {
+    margin: 0; /* Remove default margin */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scale up by 10% */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+/* search bar styling */
+.search{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 70px;
+    background-color: var(--white-color);
+    border-radius: 40px;
+    padding: 10px;
+    width:70vw;
+    display:none;
+    }
+
+.search_input{
+    color: var(--white-color);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top:5px;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    }
+
+.search .search_input{
+    padding: 0 10px;
+    width: 550px;
+    caret-color:var(--gold-color);
+    transition: width 0.4s linear;
+    color: var(--black-color);
+    }
+    
+.search:hover > .search_icon{
+    background: var(--gold-color);
+    color: var(--white-color);
+    }
+
+.search_icon{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:var(--white-color);
+    background-color:var(--black-color);
+    }
+
+#search-glass:hover {
+   
+    border-radius: 50%;
+    color:var(--black-color);
+    background-color:var(--gold-color);
+    padding: 5px;
+}
+
+a:link{
+        text-decoration:none;
+    }
+
+.f-sansserif{
+    font-family: sans-serif;
+}
+
+.heart-transition{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.heart-filled{
+    color: red;
+}
+
+.btn:hover{
+    background:red ;
+}
+
+/* auto suggestions div styling */
+#suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 50px;
+    
+  }
+  
+#suggestions li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: azure;
+    
+  }
+  
+#suggestions li:hover {
+    background-color: #4e6067;
+  }
+
+  /* Add style to content at the bottom of the home page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    height: 30vh;
+  }
+  
+#watch-btn:hover {
+    background: #ddd;
+    color: black;
+    font-family: var(--font-family);
+}
+
+#navbar {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+.content h1,p{
+    color: var(--gold-color);
+    font-family: var(--font-family);
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
+}
+
+
+#dropdown-options{
+    display: none;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:992px) {
+
+    #dropdown-options{
+        display: block;
+    }
+
+    #nav-options-text{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
