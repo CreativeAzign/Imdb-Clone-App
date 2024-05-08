@@ -33,7 +33,7 @@ This is a simple web application that allows users to search for movies using th
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/yourusername/movie-search-app.git`
+1. Clone the repository
 2. Open the `index.html` file in your web browser.
 
 
