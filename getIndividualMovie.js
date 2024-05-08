@@ -4,7 +4,7 @@ export async function getMovieDetails(imdbID) {
   try {
     // Fetch movie details from OMDB API
     const response = await fetch(
-      `http://www.omdbapi.com/?apikey=${key}&i=${imdbID}`
+      `https://www.omdbapi.com/?apikey=${key}&i=${imdbID}`
     );
 
     // Check if the response is successful
