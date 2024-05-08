@@ -5,7 +5,7 @@ export async function fetchResults(
 ) {
   try {
     const response = await fetch(
-      `http://www.omdbapi.com/?apikey=${key}&s=${searchString}`
+      `https://www.omdbapi.com/?apikey=${key}&s=${searchString}`
     );
     if (!response.ok) {
       throw new Error("somethin went wrong!!!");
